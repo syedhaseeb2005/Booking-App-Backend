@@ -27,6 +27,7 @@ mongoose.connection.on('disconnected',()=>{
 mongoose.connection.on('connected',()=>{
     console.log('Mongo Connected');
 })
+
 // middleware
 app.use(cookieParser())
 app.use('/api/auth',authRoute)
