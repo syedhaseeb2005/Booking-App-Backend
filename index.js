@@ -6,8 +6,11 @@ import hotelsRoute from './Routes/hotelsRoute.js'
 import usersRoute from './Routes/usersRoute.js'
 import roomsRoute from './Routes/roomsRoute.js'
 import cookieParser from "cookie-parser";
+import cors from 'cors'
+
 const app = express()
 app.use(express.json())
+app.use(cors())
 const port = 8000;
 dotenv.config()
 
